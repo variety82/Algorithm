@@ -1,7 +1,3 @@
-# To add a new cell, type '# %%'
-# To add a new markdown cell, type '# %% [markdown]'
-
-# %%
 
 - 2021-07-13
 - 실전 문제 큰수의 법칙
@@ -11,7 +7,6 @@
          
 
 
-# %%
 N,M,K=map(int,input().split())
 _list=sorted(list(map(int,input().split())),reverse=True)
 cnt=0 #K번을 셀 친구 
@@ -24,10 +19,6 @@ for i in range(M):
         answer+=_list[0]
         cnt+=1
 print(answer)
-
-
-
-# %%
 
 #문제 해설 답안
 first=data[n-1]
