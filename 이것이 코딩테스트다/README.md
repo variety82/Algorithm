@@ -1,2 +1,37 @@
-# Algorithm
-Algorithm
+# 이것이 코딩 테스트다 with 파이썬
+___
+
+
+
+#### Chapter.03 Greedy
+
+✍[Greedy 내용정리](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.03.Greedy/README.md)
+
+- 실전문제
+
+  [(2)큰 수의 법칙](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.03.Greedy/%ED%81%B0%20%EC%88%98%EC%9D%98%20%EB%B2%95%EC%B9%99(%EC%8B%A4%EC%A0%84%EB%AC%B8%EC%A0%9C).py)
+
+  [(3)숫자 카드 게임](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.03.Greedy/(3)%EC%88%AB%EC%9E%90%20%EC%B9%B4%EB%93%9C%20%EA%B2%8C%EC%9E%84(%EC%8B%A4%EC%A0%84).py)
+
+  [(4)1이 될 때 까지](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.03.Greedy/(4)%201%EC%9D%B4%20%EB%90%A0%20%EB%95%8C%20%EA%B9%8C%EC%A7%80(%EC%8B%A4%EC%A0%84).py)
+
+#### Chapter.04 구현
+
+✍내용정리 없음
+
+- 실전문제
+
+  [(2)왕실의 나이트](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.04%20%EA%B5%AC%ED%98%84/(2)%EC%99%95%EC%8B%A4%EC%9D%98%20%EB%82%98%EC%9D%B4%ED%8A%B8(%EC%8B%A4%EC%A0%84%EB%AC%B8%EC%A0%9C).py)
+
+  [(3)게임 개발](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.04%20%EA%B5%AC%ED%98%84/(3)%EA%B2%8C%EC%9E%84%20%EA%B0%9C%EB%B0%9C(%EC%8B%A4%EC%A0%84%EB%AC%B8%EC%A0%9C).py)
+
+#### Chapter.05 DFS/BFS
+
+✍[DFS/BFS 내용정리](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.05%20DFS%26BFS/README.md)
+
+- 실전문제
+
+  [(3)음료수 얼려 먹기](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.05%20DFS%26BFS/(3)%EC%9D%8C%EB%A3%8C%EC%88%98%20%EC%96%BC%EB%A0%A4%20%EB%A8%B9%EA%B8%B0%20(%EC%8B%A4%EC%A0%84%EB%AC%B8%EC%A0%9C).py)
+
+  [(4)미로 탈출](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.05%20DFS%26BFS/(4)%20%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C%20(%EC%8B%A4%EC%A0%84%EB%AC%B8%EC%A0%9C).py)
+
