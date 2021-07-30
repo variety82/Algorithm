@@ -47,4 +47,34 @@ ___
 
   [(4)두 배열의 원소 교체](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.06%20%EC%A0%95%EB%A0%AC/(4)%EB%91%90%20%EB%B0%B0%EC%97%B4%EC%9D%98%20%EC%9B%90%EC%86%8C%20%EA%B5%90%EC%B2%B4%20-%20%EC%8B%A4%EC%A0%84%EB%AC%B8%EC%A0%9C.py)
 
-  
+
+Chapter.07 이진탐색(Binary Search)
+
+✍[이진 탐색 내용정리](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.07%20%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89/README.md)
+
+- 실전문제
+
+  [(2)부품찾기](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.07%20%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89/(2)%EB%B6%80%ED%92%88%20%EC%B0%BE%EA%B8%B0%20-%20%EC%8B%A4%EC%A0%84%EB%AC%B8%EC%A0%9C.py)
+
+  (3)떡볶이 떡 만들기  -> 다시해야됨
+
+Chapter.08 다이나믹 프로그래밍(Dynamic Programming)
+
+✍[DP 내용정리](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.08%20Dynamic%20Programming/README.md)
+
+- 실전문제
+
+  [(2)1로 만들기](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.08%20Dynamic%20Programming/(2)1%EB%A1%9C%20%EB%A7%8C%EB%93%A4%EA%B8%B0-%EC%8B%A4%EC%A0%84%EB%AC%B8%EC%A0%9C.py)
+
+  [(3)개미전사](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.08%20Dynamic%20Programming/(3)%EA%B0%9C%EB%AF%B8%EC%A0%84%EC%82%AC%20-%20%EC%8B%A4%EC%A0%84%EB%AC%B8%EC%A0%9C.py)
+
+  [(4)바닥공사](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.08%20Dynamic%20Programming/(4)%EB%B0%94%EB%8B%A5%20%EA%B3%B5%EC%82%AC%20-%20%EC%8B%A4%EC%A0%84%EB%AC%B8%EC%A0%9C.py)
+
+  [(5)효율적인 화폐 구성](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.08%20Dynamic%20Programming/(5)%ED%9A%A8%EC%9C%A8%EC%A0%81%EC%9D%B8%20%ED%99%94%ED%8F%90%20%EA%B5%AC%EC%84%B1%20-%20%EC%8B%A4%EC%A0%84%EB%AC%B8%EC%A0%9C.py) -> DP확인 ! 
+
+Chapter.09 최단경로
+
+✍[최단경로 내용정리](https://github.com/variety82/Algorithm/blob/main/%EC%9D%B4%EA%B2%83%EC%9D%B4%20%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8B%A4/CH.09%20%EC%B5%9C%EB%8B%A8%EA%B2%BD%EB%A1%9C/README.md)
+
+- 실전문제
+
