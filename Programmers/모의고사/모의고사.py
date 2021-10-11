@@ -4,6 +4,12 @@
 # In[ ]:
 
 
+'''
+2021-10-11
+idea : 학생 1,2,3 의 문제개수를 위해 divmod를 사용하여 몫, 나머지를 구하고 답안지 사이즈에 맞춰서 늘려줬다
+그 후 완전탐색을 이용해 학생과 답안지를 비교해 정답개수를 카운트 해주고 오름차순으로 answer에 추가한다. 
+'''
+
 def solution(answers):
     
     ansLen = len(answers)
@@ -38,4 +44,9 @@ def solution(answers):
         if(max(temp) == value):
             answer.append(idx+1)
     return answer
+
+'''
+회고 : 처음엔 맥스값을 찾고 정렬하기 위해 정렬을 한 후 사용했는데 그건 정답개수였고, 그 후 학생 번호와 정답개수를 매칭시키는데 조금 애먹었다
+enumerate를 사용해서 value에 따라 idx에 1을 더해 추가하면 됐따!
+'''
 
