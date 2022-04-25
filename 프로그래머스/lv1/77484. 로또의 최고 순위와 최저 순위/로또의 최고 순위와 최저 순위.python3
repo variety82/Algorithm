@@ -7,3 +7,12 @@ def solution(lottos, win_nums):
     answer = [rank[cnt+len(arr)], rank[len(arr)]]
     # print(arr)
     return answer
+    
+    
+    
+    
+   # ✍회고
+   ```
+   아이디를 바꿔서 오랜만에 다시 풀어본 문제, 그냥 기억에 남아서 빠르게 푼 듯...
+   
+   ```
