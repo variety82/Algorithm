@@ -69,3 +69,10 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
+
+
+
+🎃회고
+
+Counter를 사용한 간단한 풀이로 풀었으나 뭔가 좀 그래서 다른 풀이를 찾아봤다
+유형에 걸맞게 hash를 사용한 풀이가 있어 해시로 다시 풀어봄 !  
