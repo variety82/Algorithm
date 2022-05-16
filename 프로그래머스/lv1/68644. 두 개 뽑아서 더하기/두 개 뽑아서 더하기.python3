@@ -1,6 +1,10 @@
-from itertools import combinations
 def solution(numbers):
-    answer = [sum(x) for x in list(combinations(numbers, 2))]
-    answer = sorted(list(set(answer)))
-
+    answer = []
+    temp=[]
+    for i in range(len(numbers)-1):
+        for j in range(i+1,len(numbers)):
+            temp.append(numbers[i]+numbers[j])     
+    set_temp=set(temp)
+    real=list(set_temp)
+    answer=sorted(real)
     return answer
