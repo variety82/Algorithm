@@ -1,0 +1,5 @@
+def solution(nums):
+    cnt = len(nums) // 2
+    nums = list(set(nums))
+    
+    return min(cnt, len((nums)))
