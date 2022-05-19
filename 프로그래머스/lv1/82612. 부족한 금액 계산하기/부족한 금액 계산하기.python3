@@ -1,0 +1,8 @@
+def solution(price, money, count):
+    debt = sum([price * x for x in range(1, count+1)])
+    answer = money - debt
+
+    if answer < 0:
+        return -answer
+    else:
+        return 0
