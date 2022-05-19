@@ -62,3 +62,7 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
+
+
+🎃 회고
+부족한 돈을 계산 후 if & else 처리로 답을 리턴했는데 max로 한 번에 처리가 더 좋은 듯? 
