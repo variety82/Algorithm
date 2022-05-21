@@ -1,0 +1,5 @@
+def solution(n):
+    s = '수박'
+    q, r = divmod(n, 2)
+    answer = s * q + s[:r]
+    return answer
