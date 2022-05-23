@@ -201,3 +201,10 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
+
+
+🎃회고
+
+메일을 받지 못하는 사람에 대한 0처리를 고민했던 문제
+test = {x:0 for x in id_list} 이런식으로 하면 기본적으로 0으로 설정된다
++ 굳이 defalutdict을 사용하지 않아도....
