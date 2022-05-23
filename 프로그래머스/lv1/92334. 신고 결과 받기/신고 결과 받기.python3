@@ -1,8 +1,9 @@
 from collections import defaultdict
 
 def solution(id_list, report, k):
+    # 중복된 신고는 제거
     report = list(set(report))
-
+    # 신고횟수를 count하기 위한 report_arr과 메일을 받는 횟수 카운트를 위한 answer_arr를 생성
     report_arr = defaultdict(int)
     answer_arr = defaultdict(int)
     answer = []
@@ -16,6 +17,7 @@ def solution(id_list, report, k):
         if report_arr[target] >= k:
             answer_arr[id] +=1
         
+    # 최종 답을 위해 순서대로 넣기, 없으면 0으로 입력
     for id in id_list:
         if id in answer_arr:
             answer.append(answer_arr[id])
