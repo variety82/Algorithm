@@ -1,0 +1,24 @@
+from collections import defaultdict
+
+def solution(id_list, report, k):
+    report = list(set(report))
+
+    report_arr = defaultdict(int)
+    answer_arr = defaultdict(int)
+    answer = []
+    for repo in report:
+        id, target = repo.split(' ')
+        report_arr[target] += 1
+
+
+    for check in report:
+        id, target = check.split(' ')
+        if report_arr[target] >= k:
+            answer_arr[id] +=1
+        
+    for id in id_list:
+        if id in answer_arr:
+            answer.append(answer_arr[id])
+        else:
+            answer.append(0)
+    return answer
