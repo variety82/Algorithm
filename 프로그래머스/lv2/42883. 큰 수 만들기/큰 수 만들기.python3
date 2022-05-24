@@ -1,0 +1,26 @@
+from collections import deque
+
+def solution(number, k):
+    arr = deque(list(number))
+    stack = []
+    
+    if len(arr) == 2:
+        return max(arr[0], arr[1])
+    
+    while k != 0 and len(arr)!=0:
+        if not stack:
+            stack.append(arr[0])
+            arr.popleft()
+
+        if stack[-1] < arr[0]:
+            stack.pop(-1)
+            k -= 1
+        else:
+            stack.append(arr[0])
+            arr.popleft()
+
+    if k == 0:
+        stack.extend(arr)
+    else:
+        stack = stack[:len(stack)-k]
+    return "".join(stack)
