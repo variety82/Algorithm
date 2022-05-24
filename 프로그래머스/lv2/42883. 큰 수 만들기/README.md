@@ -58,3 +58,9 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
+
+
+😒회고
+
+일년전 풀이와 로직은 같은데 풀이가 길어졌따....OMG....
+시간복잡도 문제도 발생하여 list 대신 deque를 사용하여 줄여서 통과했으나 일년전 풀이를 보니 deque없이도 통과했다 ㅜㅜ
