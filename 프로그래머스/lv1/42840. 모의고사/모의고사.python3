@@ -1,0 +1,28 @@
+def solution(answers):
+    ans_len = len(answers)
+    
+    student1 = [1, 2, 3, 4, 5]
+    student2 = [2, 1, 2, 3, 2, 4, 2, 5]
+    student3 = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5]
+
+    pattern1 = student1 * (ans_len // len(student1)) + student1[:ans_len % len(student1)]
+    pattern2 = student2 * (ans_len // len(student2)) + student2[:ans_len % len(student2)]
+    pattern3 = student3 * (ans_len // len(student3)) + student3[:ans_len % len(student3)]  
+
+    cnt1, cnt2, cnt3 = 0, 0, 0
+
+    for i in range(ans_len):
+        if answers[i] == pattern1[i]:
+            cnt1 += 1
+        if answers[i] == pattern2[i]:
+            cnt2 += 1
+        if answers[i] == pattern3[i]:
+            cnt3 += 1
+            
+    tmp = [cnt1, cnt2, cnt3]
+    answer = []
+    for idx, value in enumerate(tmp):
+        if max(tmp) == value:
+            answer.append(idx+1)
+    
+    return answer
