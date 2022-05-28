@@ -4,25 +4,24 @@ def solution(n):
     n_copy = n
     x, y = -1, 0
     for i in range(n):
-        for _ in range(n, 0, -1):
+        for _ in range(n-i):
             if i % 3 == 0:
                 x += 1
-                arr[x][y] = cnt
-                cnt += 1
-            if i % 3 == 1:
+
+            elif i % 3 == 1:
                 y += 1
-                arr[x][y] = cnt
-                cnt += 1
-            if i % 3 == 2:
+
+            elif i % 3 == 2:
                 x -= 1
                 y -= 1
-                arr[x][y] = cnt
-                cnt += 1
 
-        n -= 1
+            arr[x][y] = cnt
+            cnt += 1
+
+
     answer = []
-    for i in range(n_copy):
-        for j in range(n_copy):
+    for i in range(n):
+        for j in range(n):
             if arr[i][j] != 0:
                 answer.append(arr[i][j])
     return answer
