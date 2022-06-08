@@ -1,0 +1,29 @@
+def solution(priorities, location):
+    import copy
+
+    max_arr = copy.deepcopy(priorities)
+    max_value = max(max_arr)
+    for idx, value in enumerate(priorities):
+        priorities[idx] = (idx, value)
+
+    cnt = 1
+    flag = True
+
+    while flag:
+        for (idx, value) in priorities:
+            if idx == location and value == max_value:
+                return cnt
+                flag = False
+
+            elif value != max_value:
+                tmp = priorities.pop(0)
+                priorities.append(tmp)
+                break
+            else:
+                priorities.pop(0)
+                cnt += 1
+                max_arr.remove(max_value)
+                max_value = max(max_arr)
+                break
+            if flag == False:
+                break
