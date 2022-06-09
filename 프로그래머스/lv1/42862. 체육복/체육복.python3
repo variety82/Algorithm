@@ -1,0 +1,17 @@
+def solution(n, lost, reserve):
+    reserve.sort()
+    final_reserve = [x for x in reserve if x not in lost]
+    lost = [x for x in lost if x not in reserve]
+    check = [True] * n
+
+    for i in range(n):
+        for j in lost:
+            check[j-1] = False
+  
+    for reserve in final_reserve:
+        if (reserve - 1) in lost and check[reserve - 2] == False:
+            check[reserve - 2] = True
+        elif (reserve + 1) in lost and check[reserve] == False:
+            check[reserve] = True
+            
+    return check.count(True)
