@@ -1,0 +1,9 @@
+def solution(n):
+    n_arr = ['1', '2', '4']
+    base = ''
+    
+    while n > 0:
+        n -= 1
+        base += n_arr[n % 3]
+        n //= 3
+    return base[::-1]
