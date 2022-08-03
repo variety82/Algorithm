@@ -1,22 +1,53 @@
-T = int(input())
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
-for test_case in range(1, T + 1):
-    n, m = map(int, input().split())
-    k = n - m + 1
-    arr = [list(map(int, input().split())) for _ in range(n)]
-    max_fly = 0
-    start_col = 0
+class Solution {
+	static int T, N, M, K;
+	static int flySum;
+	static int maxSum;
+	static int [][] map;
+	static BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+	static StringBuilder output = new StringBuilder();
+	static StringTokenizer tokens;
+	public static void main(String[] args) throws NumberFormatException, IOException {
+//		input = new BufferedReader(new FileReader("./input.txt"));
+		T = Integer.parseInt(input.readLine());
+		
+		for(int tc = 1; tc <= T; tc++) {
+			tokens = new StringTokenizer(input.readLine(), " ");
+			N = Integer.parseInt(tokens.nextToken());
+			M = Integer.parseInt(tokens.nextToken());
+			// K : 파리채 이동가능 횟수 
+			K = N - M + 1;
+			map = new int[N][N];
+			for(int r = 0; r < N; r++) {
+				tokens = new StringTokenizer(input.readLine(), " ");
+				for(int c = 0; c < N; c++) {
+					map[r][c] = Integer.parseInt(tokens.nextToken());
+				}
+			}
+			
+			maxSum = 0;
+			// 오른쪽으로 K번, 아래로 K번, M : 파리채 크기
+			for(int r = 0; r < K; r++) {
+				for(int c = 0; c < K; c++) {
+					flySum = 0;
+					for(int i = 0; i < M; i++) {
+						for(int j = 0; j < M; j++) {
+							flySum += map[r + i][c + j];
+						maxSum = Math.max(maxSum, flySum);
+					}
+				}
+			}
+			
+		}
+			output.append(String.format("#%s %d\n", tc, maxSum));
+			
+	}
+		System.out.println(output);
+}
+}
 
-    for i in range(k):
-        start_row = 0
-
-        for j in range(k):
-            sum_fly = 0
-
-            for l in range(m):
-                sum_fly += sum(arr[l + start_col][start_row:start_row + m])
-            start_row += 1
-            max_fly = max(max_fly, sum_fly)
-        start_col += 1
-        
-    print(f"#{test_case} {max_fly}")
