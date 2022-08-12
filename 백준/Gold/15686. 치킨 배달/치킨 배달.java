@@ -6,12 +6,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.StringTokenizer;
-import java.util.spi.CalendarNameProvider;
-
 
 class Main {
 	static int N, M, minVal, sumDist, answer;
-	static int [] dist;
 	static int [][] map;
 	static Integer [][] candidate;
 	static List<Integer []> store, home;
@@ -19,39 +16,30 @@ class Main {
 	static StringTokenizer tokens;
 	
 	 static int calDistance(Integer [][] candidate) {
+		 sumDist = 0;
 		 for(int i = 0; i < home.size(); i++) {
 			 minVal = Integer.MAX_VALUE;
 			 for(int j = 0; j < candidate.length; j++) {
 				 int temp = Math.abs(home.get(i)[0] - candidate[j][0]) + Math.abs(home.get(i)[1] - candidate[j][1]);
 				 minVal = Math.min(minVal, temp);
 			 }
-			 dist[i] = minVal;
-		 }
-		 sumDist = 0;
-		 for(int i = 0; i < dist.length; i++) {
-			 sumDist += dist[i];
+			 sumDist += minVal;
 		 }
 		 return sumDist;
 	 }
 	
-	
 	static void comb(int cnt, int start) {
 		if(cnt == M) {
-			//여기서 치킨거리 구하고 합 저장
 			answer = Math.min(answer, calDistance(candidate));
 			return;
 		}
-		
 		for(int i = start; i < store.size(); i++) {
 			candidate[cnt] = store.get(i);
 			comb(cnt + 1, i + 1);
 		}
-		
-		
 	}
 	
 	public static void main(String[] args) throws IOException {
-
 		tokens = new StringTokenizer(input.readLine());
 		N = Integer.parseInt(tokens.nextToken());
 		M = Integer.parseInt(tokens.nextToken());
@@ -70,7 +58,6 @@ class Main {
 				}
 			}
 		}
-		dist = new int[home.size()];
 		candidate = new Integer[M][2];
 		answer = Integer.MAX_VALUE;
 		
