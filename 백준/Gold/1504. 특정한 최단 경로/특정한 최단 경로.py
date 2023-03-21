@@ -31,9 +31,7 @@ def dijkstra(start, end, N):
     return distance[end]
 
 case1 = dijkstra(1, v1, N) + dijkstra(v1, v2, N) + dijkstra(v2, N, N)
-case2 = dijkstra(1, v1, N) + dijkstra(v1, v2, N) * 2 + dijkstra(v1, N, N)
 case3 = dijkstra(1, v2, N) + dijkstra(v2, v1, N) + dijkstra(v1, N, N)
-case4 = dijkstra(1, v2, N) + dijkstra(v2, v1, N) * 2 + dijkstra(v2, N, N)
-answer = min(case1, case2, case3, case4)
+answer = min(case1, case3)
 
 print(-1 if answer >= INF else answer)
