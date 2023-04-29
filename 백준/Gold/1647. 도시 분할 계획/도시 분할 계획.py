@@ -3,7 +3,12 @@ input = sys.stdin.readline
 
 N, M = map(int, input().split())
 parent = [x for x in range(0, N + 1)]
-edges = [list(map(int, input().split())) for _ in range(M)]
+edges = []
+
+for _ in range(M):
+    a, b, c = map(int, input().split())
+    edges.append((a, b, c))
+
 edges.sort(key = lambda x : x[2])
 
 def find(parent, x):
