@@ -5,10 +5,9 @@ def solution(s):
 
     for idx, spelling in enumerate(s):
         if word_dict.get(spelling) == None:
-            word_dict[spelling] = idx
             answer[idx] = -1
         else:
             answer[idx] = idx - word_dict[spelling]
-            word_dict[spelling] = idx
+        word_dict[spelling] = idx
 
     return answer
